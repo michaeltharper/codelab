@@ -1,4 +1,4 @@
 # codelab
 Explorations of individual technologies including HTML/CSS, JavaScript, PHP, Python, C#, SQL, etc.
 
-Earlier [Codelab](http://harperdev.com/code) work is being migrated from harperdev.com to Github as time permits.
+Please visit [harperdev.com/code](http://harperdev.com/code) for earlier front-end development work.
