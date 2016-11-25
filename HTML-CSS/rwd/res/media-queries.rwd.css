@@ -1,0 +1,245 @@
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+@media screen and (max-width: 980px) {
+
+	h3 { color:blue; 
+		font-size:130%;}
+	
+	/* pagewrap */
+	#pagewrap {
+		width: 95%;
+	}
+	
+	/*	header */
+	#site-logo, h1 {
+	font-size: 120%;	
+	}  
+	#site-description {
+		font-size: 90%;
+		letter-spacing: .25em;
+	}
+
+	/*	main nav  */
+	#nav1 ul {
+    font-size: 85% 
+	}
+
+	#nav1 > ul  > li:first-child {
+	margin-left: 10px;
+	}
+	#nav1 > ul > li:last-child {
+	margin-right: 10px;
+	} 
+	#nav1 ul li a {
+	display: block; padding: 6px 10px;
+	}
+
+	/* content & post */
+	#content {
+		width: 67%;
+		xpadding: 3% 4%;
+	}
+	.post-title a {
+	font-size: 90%;
+		color:magenta;
+	}
+	
+	/* sidebar */
+	#sidebar {
+		width: 30%;
+	}
+	#sidebar .widget {
+		padding: 8% 7%;
+		margin-bottom: 10px;
+	}
+
+	/* embedded videos */
+	.video embed,
+	.video object,
+	.video iframe {
+		width: 100%;
+		height: auto;
+		min-height: 300px;
+	}
+}
+	
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+	
+	
+	h3 { color:magenta; 		
+	font-size:120%;
+	}
+	
+	p {
+		font-size:90%;
+	}
+	/* main nav */
+	#nav1 {
+		position: static;
+	}
+	#nav1 ul {
+    	font-size: 80%;
+	}
+	
+	#nav1 ul li a {
+		display: block;
+		padding: 6px 10px;
+	}
+
+
+	/*#nav1 > ul  > li:first-child {
+	margin-left: 4px;
+	}
+	#nav1 > ul > li:last-child {
+	margin-right: 4px;
+	} 
+	#nav1 ul li a {
+	display: block; padding: 6px 4px;
+	}*/
+
+
+
+	/* site logo ******************* */
+	#site-logo {
+	font-size: 80%;
+	}
+
+	/* site description */
+	#site-description {
+		font-size: 90%;
+		letter-spacing: .2em;
+	}
+
+	/* content */
+	#content {
+		width: auto;
+		float: none;
+		margin: 20px 0;
+	}
+
+	/* sidebar */
+	#sidebar {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+	#sidebar .widget {
+		padding: 3% 4%;
+		margin: 0 0 10px;
+	}
+
+		 /*	******************* */
+	.post-title a {
+		font-size: 80%;
+		color:red;
+	}	
+	
+	/* embedded videos */
+	.video embed,
+	.video object,
+	.video iframe {
+		min-height: 250px;
+	}
+
+}
+
+/************************************************************************************
+smaller than 480
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+	h3 { color:green; }
+
+		/* main nav 
+	#nav1 a {
+		position: static;
+	}
+	#nav1 ul {
+    font-size: 75%;
+	}
+	#nav1 > ul  > li:first-child {
+	margin-left: 10px;
+	}
+	#nav1 > ul > li:last-child {
+	margin-right: 10px;
+	} 
+
+*/
+	#nav1 ul li a {
+	display: block; padding: 6px 10px !important;
+	}
+	
+	/* content & post */
+
+	.post-title a {
+	font-size: 75%;
+	color:green;
+	}
+
+	#site-logo {
+	font-size: 70%;
+		color:red;
+	}
+
+	#site-logo img {
+	width: 80%;
+	}
+	
+	/* site description */
+	#site-description {
+		letter-spacing: .1em;
+	}
+	
+}
+
+/************************************************************************************
+smaller than 320
+*************************************************************************************/
+@media screen and (max-width: 320px) {
+
+	h3 { color:red; }
+
+	p {
+		font-size:80%;
+		line-height:102%;
+		min-width: 320px;
+	}
+	
+	/* main nav */
+	#nav1 {
+		xmin-width:288px;
+	}
+	
+	#nav1 ul li a {
+		display: block;
+		padding: 6px 10px;
+	}
+	
+	/* content & post */
+	.post-title  a {
+	font-size: 70%;
+		color:black;
+	}
+	
+	/* site logo ******************* */
+	#site-logo {
+	font-size: 60%;
+		color:red;	
+	}
+
+	/* site description */
+	#site-description {
+		letter-spacing: 0;
+		float:left;
+	}
+	
+}
