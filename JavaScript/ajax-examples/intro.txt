@@ -1,0 +1,2 @@
+This is a text file on the server, which in addition to this sentence contains HTML code for a small alert icon.  
+<img src="alert.png" height="10" /><br />

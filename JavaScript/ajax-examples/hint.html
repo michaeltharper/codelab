@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function loadXMLDoc(thediv,theurl)
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById(thediv).innerHTML=xmlhttp.responseText;
+    }
+  }
+//xmlhttp.open("GET",theurl,true);
+xmlhttp.open("GET",  theurl + "?t=" + Math.random(),true); // append random() to make each URL unique, prevent caching.
+//xmlhttp.open("GET","demo_get2.asp?fname=Henry&lname=Ford",true);  // syntax to pass args w GET, when script can accept
+xmlhttp.send();
+}
+
+function showHint(str)
+{
+var xmlhttp;
+if (str.length==0)
+  { 
+  document.getElementById("txtHint").innerHTML="";
+  return;
+  }
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","gethint.php?q="+str,true);
+xmlhttp.send();
+}
+</script>
+<style> div.itemwrap { margin:8px; padding:8px; border: 1px solid gray; }</style}
+</head>
+<body>
+<div id="myDiv">Replace this text with the contents of a server file, using an XMLHttpRequest object and innerHTML.</div>
+<button type="button" onclick="loadXMLDoc('myDiv','intro.txt')">Replace</button>
+
+<hr>
+
+<button type="button" onclick="loadXMLDoc('myDiv2','datetime.php')">Insert the output of a server script</button>
+<div id="myDiv2"></div>
+
+<hr>
+
+Start typing a name in the input field below
+<form action=""> 
+First name: <input type="text" id="txt1" onkeyup="showHint(this.value)" />
+</form>
+<p>Suggestions: <span id="txtHint"></span></p> 
+
+
+</body>
+</html>
