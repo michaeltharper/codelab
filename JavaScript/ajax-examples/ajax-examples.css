@@ -1,0 +1,10 @@
+article { width:50%; min-width:220px; margin:1% 1% 2% 1%; padding:1%; border: 1px solid #bbc9bb; background: #eef9ee; font-size:12px; border-radius:4px; box-shadow: 0 2px 5px rgb(190,195,190);}
+
+body { background: #eee; color:#343; font-family: sans-serif;}
+
+button {  width:auto; margin:1% 0; padding:2px; border: 1px solid #bbc9bb; background: #ccd6cc; font:12px arial,sans-serif; border-radius:3%; cursor: pointer; }  
+<!--  height: auto; width: auto\9; /* ie8 */ -->
+
+h3 { margin:0; padding:0; }
+
+td { font-size:90%;}
