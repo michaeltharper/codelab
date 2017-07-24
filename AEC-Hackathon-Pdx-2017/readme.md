@@ -6,6 +6,6 @@ Purpose:  Track building materials and components using attached QR codes and sm
 
 The demo landing page is a manager interface, with links to individual part status pages.
 
-Mobile devices can use QR codes to reach a product status page, and desktops can access the same page via link, etc.
+Mobile devices can use QR codes to reach a product status page, and desktops can access the same page via link, etc.  The two included QR code JPGs are not required for the project, but are included to provide an easy way to test on mobile devices.
 
 Product status pages use WebVR framework: "[A-Frame](https://aframe.io)" to display 3D objects in browsers and smart devices.
